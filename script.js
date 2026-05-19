@@ -7,12 +7,14 @@ const roles=[
 let i=0;
 let j=0;
 
-function typing(){
+function type(){
 
 let current=roles[i];
 
-document.getElementById("typing")
-.innerHTML=
+document.getElementById(
+"typing"
+).innerHTML=
+
 current.slice(0,j++);
 
 if(j>current.length){
@@ -29,8 +31,8 @@ i=0;
 
 }
 
-setTimeout(typing,120);
+setTimeout(type,120);
 
 }
 
-typing();
+type();
