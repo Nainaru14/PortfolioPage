@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
 <title>Nainaru Chiranjeevi Portfolio</title>
 
@@ -12,22 +14,27 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
 <header>
 
 <nav>
 
-<div class="logo">
-Chiranjeevi Nainaru
-</div>
+<h2 class="logo">
+Chiranjeevi
+</h2>
 
 <ul>
 
-<li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
+
 <li><a href="#skills">Skills</a></li>
+
+<li><a href="#experience">Experience</a></li>
+
 <li><a href="#projects">Projects</a></li>
+
 <li><a href="#contact">Contact</a></li>
 
 </ul>
@@ -37,11 +44,11 @@ Chiranjeevi Nainaru
 </header>
 
 
-<section class="hero" id="home">
+<section class="hero">
 
-<div class="left">
+<div>
 
-<h3>Hello, I'm</h3>
+<h3>Hello I'm</h3>
 
 <h1>NAINARU CHIRANJEEVI</h1>
 
@@ -49,31 +56,45 @@ Chiranjeevi Nainaru
 
 <p>
 
-Results-driven Software Developer specializing in
-Java, Spring Boot, React.js and MySQL.
+Results-driven Software Developer with expertise in Java,
+Spring Boot, React.js, MySQL and REST APIs.
 
 </p>
 
 <div class="buttons">
 
-<a href="https://drive.google.com/file/d/1UYhbwvZYUrMIsca8f378JnXKPyY6Mfzw/view?usp=sharing" class="btn">Download Resume</a>
+<a href="Nainaru_Chiranjeevi_Resume.pdf"
+download
+class="btn">
 
-<a href="https://github.com/Nainaru14" class="btn2">
+Download Resume
+
+</a>
+
+<a href="https://github.com/Nainaru14"
+target="_blank"
+class="icon">
+
 <i class="fab fa-github"></i>
+
 </a>
 
-<a href="https://www.linkedin.com/in/chiranjeevi-nainaru" class="btn2">
+<a href="https://www.linkedin.com/in/chiranjeevi-nainaru"
+target="_blank"
+class="icon">
+
 <i class="fab fa-linkedin"></i>
+
 </a>
 
 </div>
 
 </div>
 
+<div>
 
-<div class="right">
-
-<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+class="profile">
 
 </div>
 
@@ -85,15 +106,26 @@ Java, Spring Boot, React.js and MySQL.
 
 <h1>About Me</h1>
 
-<div class="glass">
+<div class="card">
 
 <p>
 
-Results-driven Software Developer with strong expertise in Java, Spring Boot, React.js, MySQL,
-and RESTful API development. Proficient in Data Structures & Algorithms, Object-Oriented
-Programming (OOP), DBMS, Operating Systems, and Agile methodologies. Experienced in
-building scalable full-stack applications, optimizing backend performance, and delivering
-production-ready solutions. Seeking an SDE-1 / Full Stack Developer role.
+Passionate Full Stack Developer skilled in Java,
+Spring Boot, React.js, MySQL and REST APIs.
+
+Strong knowledge in:
+
+✔ DSA
+
+✔ OOP
+
+✔ DBMS
+
+✔ Operating Systems
+
+✔ Agile Development
+
+Seeking SDE-1 / Full Stack opportunities.
 
 </p>
 
@@ -103,20 +135,62 @@ production-ready solutions. Seeking an SDE-1 / Full Stack Developer role.
 
 
 
+
 <section id="skills">
 
 <h1>Skills</h1>
 
-<div class="skills">
+<div class="grid">
 
 <div class="card">Java</div>
+
 <div class="card">Spring Boot</div>
+
 <div class="card">React JS</div>
+
 <div class="card">MySQL</div>
+
 <div class="card">JavaScript</div>
-<div class="card">GitHub</div>
-<div class="card">REST API</div>
+
+<div class="card">Git/GitHub</div>
+
+<div class="card">REST APIs</div>
+
 <div class="card">Python</div>
+
+</div>
+
+</section>
+
+
+
+<section id="experience">
+
+<h1>Experience</h1>
+
+<div class="card">
+
+<h3>Kodnest Technologies</h3>
+
+<p>
+
+Software Development Intern
+
+Aug 2025 – Feb 2026
+
+</p>
+
+<ul>
+
+<li>Built scalable web applications</li>
+
+<li>Improved UI responsiveness by 30%</li>
+
+<li>Integrated REST APIs</li>
+
+<li>Resolved production defects</li>
+
+</ul>
 
 </div>
 
@@ -128,58 +202,88 @@ production-ready solutions. Seeking an SDE-1 / Full Stack Developer role.
 
 <h1>Projects</h1>
 
-<div class="projects">
+<div class="grid">
 
-<div class="project">
+<div class="card"
+onclick="showProject('sales')">
 
-<h2>Sales Savvy</h2>
-
-<p>
-
-E-Commerce platform with JWT authentication,
-Razorpay integration and REST APIs.
-
-</p>
+Sales Savvy
 
 </div>
 
 
-<div class="project">
+<div class="card"
+onclick="showProject('task')">
 
-<h2>Task Buddy</h2>
-
-<p>
-
-Task management application with CRUD operations.
-
-</p>
+Task Buddy
 
 </div>
 
 
-<div class="project">
+<div class="card"
+onclick="showProject('door')">
 
-<h2>Automatic Door Lock</h2>
-
-<p>
-
-Arduino-based security automation project.
-
-</p>
+Automatic Door Lock
 
 </div>
 
 
-<div class="project">
+<div class="card"
+onclick="showProject('vlsi')">
 
-<h2>16-bit Carry Select Adder</h2>
+16-bit Carry Select Adder
 
-<p>
+</div>
 
-VLSI optimization reducing delay and power.
+</div>
 
-</p>
+</section>
 
+
+
+
+<section>
+
+<h1>Education</h1>
+
+<div class="card">
+
+B.Tech (ECE)
+
+CGPA : 8.95
+
+Annamacharya Institute of Technology and Sciences
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<h1>Certifications</h1>
+
+<div class="grid">
+
+<div class="card">
+Cloud Computing - NPTEL
+</div>
+
+<div class="card">
+Joy of Computing Using Python
+</div>
+
+<div class="card">
+Cyber Security
+</div>
+
+<div class="card">
+Salesforce Virtual Internship
+</div>
+
+<div class="card">
+Java Full Stack Program
 </div>
 
 </div>
@@ -192,15 +296,39 @@ VLSI optimization reducing delay and power.
 
 <h1>Contact</h1>
 
-<p>
-📧 chiranjeevi1106@gmail.com
-</p>
+<div class="card">
 
-<p>
-📞 6301003261
-</p>
+<p>Email:
+chiranjeevi1106@gmail.com</p>
+
+<p>Phone:
+6301003261</p>
+
+</div>
 
 </section>
+
+
+
+<div class="modal"
+id="modal">
+
+<div class="modal-content">
+
+<span onclick="closeModal()">
+
+&times;
+
+</span>
+
+<h2 id="title"></h2>
+
+<p id="details"></p>
+
+</div>
+
+</div>
+
 
 
 <script src="script.js"></script>
