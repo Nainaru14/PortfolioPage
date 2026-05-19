@@ -1,43 +1,164 @@
-const text=[
+const roles=[
+
 "Full Stack Developer",
+
 "Java Developer",
+
 "Software Engineer"
+
 ];
 
-let count=0;
-let index=0;
+let i=0;
+let j=0;
 let current="";
-let letter="";
 
-(function typing(){
+function typing(){
 
-if(count===text.length){
+if(i<roles.length){
 
-count=0;
+current=roles[i];
 
-}
+document.getElementById(
+"typing"
 
-current=text[count];
+).innerHTML=
 
-letter=current.slice(0,++index);
+current.slice(0,j++);
 
-document.getElementById("typing")
-.innerHTML=letter;
-
-if(letter.length===current.length){
-
-count++;
-
-index=0;
-
-setTimeout(typing,1000);
-
-}
-
-else{
+if(j<=current.length){
 
 setTimeout(typing,100);
 
 }
 
-})();
+else{
+
+j=0;
+i++;
+
+setTimeout(typing,1000);
+
+}
+
+}
+
+else{
+
+i=0;
+
+typing();
+
+}
+
+}
+
+typing();
+
+
+
+function showProject(project){
+
+const title=
+document.getElementById(
+"title"
+);
+
+const details=
+document.getElementById(
+"details"
+);
+
+if(project==="sales"){
+
+title.innerHTML=
+"Sales Savvy";
+
+details.innerHTML=`
+
+Tech:
+Java, Spring Boot, JWT,
+Razorpay, REST APIs
+
+Features:
+
+• Authentication
+
+• Product Catalog
+
+• Cart Service
+
+• Order Management
+
+• Payment Gateway
+
+`;
+
+}
+
+
+if(project==="task"){
+
+title.innerHTML=
+"Task Buddy";
+
+details.innerHTML=`
+
+Tech:
+
+React JS, JavaScript
+
+Features:
+
+• CRUD
+
+• React Hooks
+
+• Dynamic UI
+
+`;
+
+}
+
+
+if(project==="door"){
+
+title.innerHTML=
+"Automatic Door Lock";
+
+details.innerHTML=`
+Arduino-based
+security automation system
+using sensors and servo motor.
+`;
+
+}
+
+
+if(project==="vlsi"){
+
+title.innerHTML=
+"Carry Select Adder";
+
+details.innerHTML=`
+Reduced area, delay,
+and power consumption
+using XOR optimization.
+`;
+
+}
+
+
+document.getElementById(
+"modal"
+).style.display="flex";
+
+}
+
+
+function closeModal(){
+
+document.getElementById(
+"modal"
+).style.display="none";
+
+}
