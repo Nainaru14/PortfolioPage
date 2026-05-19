@@ -11,11 +11,8 @@ function type(){
 
 let current=roles[i];
 
-document.getElementById(
-"typing"
-).innerHTML=
-
-current.slice(0,j++);
+document.getElementById("typing")
+.innerHTML=current.slice(0,j++);
 
 if(j>current.length){
 
@@ -24,9 +21,7 @@ j=0;
 i++;
 
 if(i>=roles.length){
-
 i=0;
-
 }
 
 }
